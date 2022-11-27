@@ -1,14 +1,8 @@
+<p><video autoplay="true" id="videoElement"></video></p>
 <button type="button" id="start" onclick="cam_on()">Cam-on</button>
-<video autoplay="true" id="videoElement"></video>
 <script> var video = document.querySelector("#videoElement");
-function cam_on() {
-	stream = navigator.mediaDevices.getUserMedia({ video: true });
-	stream.then(function (value) {
-      video.srcObject = value;
-    });
-}
-</script>
-
+function cam_on() {	stream = navigator.mediaDevices.getUserMedia({ video: true });
+	stream.then(function (value) { video.srcObject = value; }); } </script>
 <!-- https://flare/testing-progress/MediaDevices/cam.display-2.php -->
 <!-- test-prog: 
 	3:22 AM 11/27/22:
