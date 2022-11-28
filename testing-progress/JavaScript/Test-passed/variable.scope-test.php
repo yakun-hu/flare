@@ -1,7 +1,6 @@
 <button type="button" id="start" onclick="variable_test()">Test-declare</button>
 <button type="button" id="start" onclick="console_log()">Console-log</button>
-<script> var video = document.querySelector("#videoElement");
-function variable_test() {
+<script> function variable_test() {
 	const carName = "Volvo";
 }
 function console_log() {
