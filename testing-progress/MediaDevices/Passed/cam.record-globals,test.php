@@ -8,4 +8,8 @@ function console_log() {
 	console.log(typeof stream);
 }</script>
 <!-- https://flare/testing-progress/MediaDevices/cam-record.php -->
-<!-- test-prog: -->
+<!-- test-prog: 
+	After Cam-on is clicked, Console-log displays 'object' to console. 
+		Test passed. 
+	If Cam-on is not first clicked, Console-log displays 'undefined' to console. 
+		Test passed.-->
