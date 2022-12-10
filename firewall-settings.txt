@@ -1,0 +1,26 @@
+1) Highest: Verizon Router at http://192.168.1.1/, password on router. 
+	80 / web.server-device port forward: https://192.168.1.1/#/firewall/portforward
+	- This rule can be disabled, without being deleted. 
+
+2) Mid: Windows: Windows Security->Advanced Settings->Inbound Rules->New Rule->
+	Port->TCP->Specific local port, 80, allow the connection, name "Flare-RTC"
+	- This rule can be disabled and re-enabled from the Inbound Rules screen. 
+	
+3) Lowest: Apache: update C:\wamp64\bin\apache\apache2.4.51\conf\httpd-vhosts.conf:
+	Change "Require local" in the localhost to "Require all granted", or by "Require ip [ip-address]"<Apache, a-r>
+	Change, also, the desired directory to this same permission within the <Directory> tag. 
+	
+Out-dated:
+	ARP table, Routing table: https://192.168.1.1/#/network/connections/0/edit?from=arptable
+	443 / web.server-device port forward: https://192.168.1.1/#/firewall/portforward
+	
+Docs: 
+	4:48 or so: Torogi Pro: https://www.youtube.com/watch?v=gmXwGZK2uZo
+	7:00: King HD News: https://www.youtube.com/watch?v=gNC80QdLK48
+	H3S5.H4S10-H5S2 and H3S7-H4S1: https://www.wordpress.materialinchess.com/2022/10/30/h2s76-finagling-tcp-ip-architecture-to-enable-true-peer-to-peer-domain-less-information-ex/
+	https://www.youtube.com/watch?v=5oen1uL-xpo
+	H3S3-H4S8: https://www.wordpress.materialinchess.com/2022/11/12/h2s114-apache-http-servlit-rev/
+	https://httpd.apache.org/docs/2.4/howto/access.html
+	
+Testing: 
+	See relevant sections in WP.MIC-H2S74, above. 
