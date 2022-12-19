@@ -18,7 +18,7 @@ function test_message() {
 	document.getElementById("peen").innerHTML = document.getElementById("message").value;
 }
 </script>
-<!-- http://flare/client-send.php -->
+<!-- https://flare/client-send.php -->
 <!-- dependencies:
 	onkeyup-test.php worked(11/15 archive)
 <!-- tests 

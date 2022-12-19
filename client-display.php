@@ -20,6 +20,5 @@ function retrieve_more_msg(){
 setInterval(retrieve_msg, 33);
 }
  </script>
-<!-- http://flare/client-display.php -->
-<!-- tests
- --> 
+<!-- https://flare/client-display.php -->
+<!-- tests --> 
