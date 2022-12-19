@@ -12,4 +12,8 @@ function play_remote() {
 	Test-1: Clicking Play-remote pops open a video recording. 
 		Recording was made remotely, and accessed via URL only. 
 		Recording plays one time, and freezes, from moment play-remote pressed. 
-			Test passed. -->
+			Test passed. 
+				The persistence<fbno>of the blob is, it looks like<80%> to the
+				end of the session of the other script, indicating that JS has some
+				session-tracking built-in, but not transparently<sued>. This also
+				raises questions, if the total recording is to be saved. -->
